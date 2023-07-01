@@ -9,6 +9,4 @@ use of affine transformation and random cropping(preprocessing.py)
 
 Use of color jitter rather than strain normalization as it gives better results.(preprocessing.py)
 
-extract_patches.py: includes processing functions for WSIs of which level >= 3;
-
-extract_patches_split.py: includes processing functions for WSIs of which level <= 2.
+Vectorize.py -> The provided code loads an image file using the OpenSlide library, extracts a region of interest (ROI) from the image at a specified level, and performs various image processing operations on the ROI. It splits the RGBA image into separate channels, merges the RGB channels, converts the RGB image to grayscale and HSV color space. It then divides the image into smaller patches of a specified size and stores them in a NumPy array. Finally, it displays one of the patches using OpenCV's cv2.imshow function. The code is useful for performing preprocessing steps on whole-slide images for tasks such as image segmentation or analysis in the field of digital pathology.
